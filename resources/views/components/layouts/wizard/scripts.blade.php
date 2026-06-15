@@ -14,7 +14,7 @@
     var wizard_modules = {!! json_encode($modules) !!};
 </script>
 
-<script src="{{ asset('public/js/wizard/wizard.min.js?v=' . version('short')) }}"></script>
+<script src="{{ asset('js/wizard/wizard.min.js?v=' . version('short')) }}"></script>
 
 @stack('body_css')
 
