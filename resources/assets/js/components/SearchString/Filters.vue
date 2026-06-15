@@ -1,18 +1,18 @@
 <template>
     <div>
         <slot name="options">
-            <div 
+            <div
                 :id="'search-field-option-' + id"
                 class="absolute top-12 ltr:left-8 rtl:right-8 py-2 bg-white rounded-md border border-gray-200 shadow-xl z-20 list-none dropdown-menu"
                 :class="[{'show': visible.options}]"
             >
-                <li 
+                <li
                     class="w-full flex items-center px-2 h-9 leading-9 whitespace-nowrap"
                     v-for="option in filteredOptions"
                     :data-value="option.key"
                 >
                     <button
-                        type="button" 
+                        type="button"
                         class="w-full h-full flex items-center rounded-md px-2 text-sm hover:bg-lilac-100"
                         @click="onOptionSelected(option.key)"
                     >{{ option.value }}</button>
@@ -32,12 +32,12 @@
                 class="absolute top-12 ltr:left-8 rtl:right-8 py-2 bg-white rounded-md border border-gray-200 shadow-xl z-20 list-none dropdown-menu operator"
                 :class="[{'show': visible.operator}]"
             >
-                <li 
+                <li
                     class="w-full flex items-center px-2 h-9 leading-9 whitespace-nowrap"
                     v-for="operator in filteredOperators"
                     :data-value="operator.sign"
                 >
-                    <button 
+                    <button
                         type="button"
                         class="w-full h-full flex items-center rounded-md px-2 text-sm hover:bg-lilac-100"
                         @click="onOperatorSelected(operator.sign)"
@@ -124,7 +124,7 @@
                         'enabled': true,
                         'symbol': {
                             'sign': '=',
-                            'img': app_url +  "/public/img/tailwind_icons/not-equal.svg",
+                            'img': app_url +  "/img/tailwind_icons/not-equal.svg",
                         },
                         'text': '',
                     },

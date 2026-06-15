@@ -1,6 +1,6 @@
 <div class="flex flex-col gap-6 mb-8">
     <div class="relative w-full mb-36 lg:mb-0">
-        <img src="{{ asset('public/img/empty_pages/no-apps.png') }}" class="w-full" alt="{{ trans('modules.no_apps_marketing') }}" />
+        <img src="{{ asset('img/empty_pages/no-apps.png') }}" class="w-full" alt="{{ trans('modules.no_apps_marketing') }}" />
 
         <div class="absolute inset-0 flex flex-col top-1/4 items-center gap-4">
             <h1 class="text-xl lg:text-5xl text-center text-black font-semibold">
@@ -21,7 +21,7 @@
         @foreach ($modules as $item)
             <div>
                 <div class="relative ltr:right-10 rtl:left-10 bottom-4">
-                    <i class="absolute material-icons text-purple transform rotate-180 text-7xl">format_quote</i> 
+                    <i class="absolute material-icons text-purple transform rotate-180 text-7xl">format_quote</i>
                 </div>
 
                 <div class="flex flex-col gap-y-6">

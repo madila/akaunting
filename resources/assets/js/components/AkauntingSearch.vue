@@ -147,8 +147,8 @@
                     </div>
                 </li>
 
-                <li v-if="multiple && filteredValues.length" 
-                    :disabled="! multiple_values.length" 
+                <li v-if="multiple && filteredValues.length"
+                    :disabled="! multiple_values.length"
                     @click="onMultipleValueSelected()"
                     :class="[{
                         'cursor-pointer' : multiple_values.length,
@@ -298,7 +298,7 @@ export default {
             show_button: false,
             show_close_icon: false,
             show_icon: true,
-            not_equal_image: app_url +  "/public/img/tailwind_icons/not-equal.svg",
+            not_equal_image: app_url +  "/img/tailwind_icons/not-equal.svg",
             input_focus: false,
             defaultPlaceholder: this.placeholder,
             dynamicPlaceholder: this.placeholder,
@@ -607,7 +607,7 @@ export default {
 
             if (! this.option_values[value] && option_url) {
                 this.onSetOptionValue(value, option_url, option_fields);
-            } else if (this.option_values[value] && ! this.option_values[value].length && option_url) { 
+            } else if (this.option_values[value] && ! this.option_values[value].length && option_url) {
                 this.onSetOptionValue(value, option_url, option_fields);
             } else {
                 this.values = (this.option_values[value]) ? this.option_values[value] : [];
@@ -1098,7 +1098,7 @@ export default {
 
             if ((start instanceof Date && ! isNaN(start)) || (end instanceof Date && ! isNaN(end))) {
                 start_date = (start instanceof Date && ! isNaN(start)) ? start_date : ((end instanceof Date && ! isNaN(end)) ? end_date : false);
-                end_date = (end instanceof Date && ! isNaN(end)) ? end_date : ((start instanceof Date && ! isNaN(start)) ? start_date : false); 
+                end_date = (end instanceof Date && ! isNaN(end)) ? end_date : ((start instanceof Date && ! isNaN(start)) ? start_date : false);
 
                 this.filter_list.forEach(function (_filter, i) {
                     if (_filter.key != 'date_range') {
