@@ -1,5 +1,5 @@
 <!-- Web Application Manifest -->
-<link rel="manifest" href="{{ asset('manifest.json') }}">
+<link rel="manifest" href="{{ asset('mix-manifest.json') }}">
 
 <!-- Chrome for Android theme color -->
 <meta name="theme-color" content="#ffffff">
