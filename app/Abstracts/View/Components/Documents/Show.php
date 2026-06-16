@@ -974,7 +974,7 @@ abstract class Show extends Component
                 return $logo;
             }
         } else {
-            $path = base_path('public/img/company.png');
+            $path = base_path('/img/company.png');
         }
 
         try {
@@ -992,7 +992,7 @@ abstract class Show extends Component
             Log::info('Company ID: ' . company_id() . ' components/documentshow.php exception.');
             Log::info($e->getMessage());
 
-            $path = base_path('public/img/company.png');
+            $path = base_path('/img/company.png');
 
             $image = Image::cache(function($image) use ($path) {
                 $width = setting('invoice.logo_size_width');

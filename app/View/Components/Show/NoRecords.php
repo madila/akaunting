@@ -58,7 +58,7 @@ class NoRecords extends Component
      */
     public function __construct(
         string $type = '', $model = false, string $page = '', string $group = '',
-        string $backgroundColor = '', string $textColor = '', 
+        string $backgroundColor = '', string $textColor = '',
         string $image = '', string $description = '', string $url = '', string $textAction = ''
     ) {
         $this->type = $type;
@@ -90,9 +90,9 @@ class NoRecords extends Component
         }
 
         $image = match ($this->type) {
-            'account'   => 'public/img/no_records/accounts_' . $this->page . '.png',
-            'customer'  => 'public/img/no_records/customers_' . $this->page . '.png',
-            'vendor'    => 'public/img/no_records/vendors_' . $this->page . '.png',
+            'account'   => 'img/no_records/accounts_' . $this->page . '.png',
+            'customer'  => 'img/no_records/customers_' . $this->page . '.png',
+            'vendor'    => 'img/no_records/vendors_' . $this->page . '.png',
             default     => '',
         };
 

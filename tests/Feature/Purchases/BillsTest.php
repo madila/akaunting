@@ -66,7 +66,7 @@ class BillsTest extends FeatureTestCase
         Carbon::setTestNow(Carbon::create(2021, 05, 15));
 
         $file = new UploadedFile(
-            base_path('public/img/empty_pages/bills.png'),
+            base_path('/img/empty_pages/bills.png'),
             'bills.png',
             'image/png',
             null,

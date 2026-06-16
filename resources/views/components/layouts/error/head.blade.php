@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/fonts/material-icons/style.css?v=' . version('short')) }}" type="text/css">
 
      <!-- Font -->
-    <link rel="stylesheet" href="{{ asset('public/vendor/quicksand/css/quicksand.css?v=' . version('short')) }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/vendor/quicksand/css/quicksand.css?v=' . version('short')) }}" type="text/css">
 
     <!-- Css -->
     <link rel="stylesheet" href="{{ asset('css//third_party/swiper-bundle.min.css?v=' . version('short')) }}" type="text/css">

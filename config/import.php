@@ -15,7 +15,7 @@ return [
 
             //'path' => 'banking/transactions',
             //'title_type  => 'transactions',
-            //'sample_file' => 'public/files/import/transactions.xlsx',
+            //'sample_file' => 'files/import/transactions.xlsx',
             /*'form_params' => [
                 'id' => 'import',
                 '@submit.prevent' => 'onSubmit',
